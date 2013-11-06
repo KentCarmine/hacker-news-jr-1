@@ -14,7 +14,7 @@ end
 # Display the page for a given user
 get '/user/:id' do
   @user_to_view = User.find(params[:id])
-  @current_user = User.find(session[:user_id])
+  # @current_user = User.find(session[:user_id])
   erb :user_page
 end
 
